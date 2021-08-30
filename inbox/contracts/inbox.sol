@@ -1,21 +1,14 @@
-pragma solidity ^0.4.17;
+// SPDX-License-Identifier: MIT
+pragma solidity 0.7.5;
 
 contract Inbox {
     string public message;
 
-    function Inbox(string initialMessage) public {
+    constructor(string memory initialMessage) {
         message = initialMessage;
     }
 
-    function setMessage(string newMessage) public {
+    function setMessage(string memory newMessage) public {
         message = newMessage;
-    }
-
-    // each underlying op has a fixed gas price
-    function doMath(int256 a, int256 b) {
-        a + b;
-        b - a;
-        a * b;
-        a == 0;
     }
 }
