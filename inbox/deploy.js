@@ -1,9 +1,10 @@
 const HDWalletProvider = require("truffle-hdwallet-provider");
 const Web3 = require("web3");
 const { interface, bytecode } = require("./compile");
+const { seedPhrase } = require("../env.json");
 
 const provider = new HDWalletProvider(
-  "scatter elegant wink junior absent retire razor toast sick spare twice length",
+  seedPhrase,
   "https://rinkeby.infura.io/v3/d5bdd657c4894e9297ec6cf7fabc5977"
 );
 const web3 = new Web3(provider);
