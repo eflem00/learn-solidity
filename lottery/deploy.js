@@ -20,6 +20,7 @@ const exec = async () => {
     .send({ from: accounts[0], gas: "1000000", gasPrice: "5000000000" });
 
   console.log(`Contract deployed to: ${result.options.address}`);
+  console.log(JSON.stringify(interface));
 };
 
 exec();
