@@ -1,3 +1,6 @@
 node_modules
 bin
 env.json
+artifacts
+cache
+.env
