@@ -1,7 +1,6 @@
 const env = require("dotenv");
 const { ethers } = require("ethers");
 const { abi } = require("../artifacts/contracts/my-nft.sol/MyNFT.json");
-const nft = require("../nfts/dog.json");
 
 env.config();
 const { PUBLIC_KEY, CONTRACT_ADDRESS, API_ID, PRIVATE_KEY } = process.env;
